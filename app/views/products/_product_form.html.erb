@@ -1,6 +1,6 @@
-<%= form_tag products_path %>
-
+<%= form_tag products_path do %>
     Add <%= label_tag "product" %>
     <%= text_field_tag "product" %>
 
     <%= submit_tag "add to cart" %>
+<% end %>
