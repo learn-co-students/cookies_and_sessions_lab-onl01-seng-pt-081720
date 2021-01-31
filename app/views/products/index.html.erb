@@ -1,5 +1,3 @@
-<%=form_tag do %>
-    <label>Product: </label>
-    <%= text_field_tag :'product'%>
-    <%= submit_tag "add to cart"%>
+<%current_cart.each do |a| %>
+<%= a %>
 <%end%>
