@@ -4,6 +4,7 @@ class ProductsController < ApplicationController
 
     def add
         @product = params[:product]
-        current_cart << @product
+        cart << @product
+        render 'index'
     end
 end
