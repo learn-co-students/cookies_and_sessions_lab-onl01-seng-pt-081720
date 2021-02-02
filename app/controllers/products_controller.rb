@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
   end
 
   def add
-   byebug
+   
     cart << params[:product]
     render :index
   end
